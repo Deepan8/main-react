@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Content from './components/dashboard/landindpage';
+import Drug from '../src/components/dashboard/drug/drug'
+import Pharmacies from './components/dashboard/pharmacies/pharmacies';
+import Pro from './components/dashboard/provides/providers';
+import Errorpage from './components/dashboard/pharmacies/errorpage/err';
+import PharmacyNames from './components/dashboard/pharmacies/PharmacyName';
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Routes>
+        <Route path="/main-react" element={<Content />}/>
+        <Route path="/Drug" element={<Drug/>}/> 
+        <Route path="/Pharmacies" element={<Pharmacies/>}><Route path="PharmacyNames" element={<PharmacyNames/>}/>  </Route>
+        <Route path="/Pro" element={<Pro/>}/> 
+        <Route path="/Errorpage" element={<Errorpage/>}/> 
+    </Routes>
+      </>
   );
 }
 

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "LexendDeca-Bold";
+    src: url(../assets/fonts/static/LexendDeca-Bold.ttf);
+}
+
+@font-face {
+    font-family: "LexendDeca-Regular";
+    src: url(../assets/fonts/static/LexendDeca-Regular.ttf);
+}
+
+/* 
+@font-face {
+    font-family: "DMSerifDisplay-Regular";
+    src: url(../../assets/fonts/static/DMSerifDisplay-Regular.ttf);
+} */

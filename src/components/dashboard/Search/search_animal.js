@@ -1,0 +1,30 @@
+export const pharmacyName =[
+ 
+    "Antibiotics",
+    "Albuterol",
+    "Antihistamines",
+    "Bandy-Plus",
+    "Benadryl Syrup",
+    "Broclear Tablet",
+    "Bilazest 20mg",
+    "Crocin Advance",
+    "Candiforce 200 Capsule",
+    "Dolo 650",
+    "Derobin Ointment",
+    "Enzoflam",
+    "Emeset",
+    "Hydrocodone",
+    "Eliwel 10mg",
+    "Flexon",
+    "Folitrax",
+    "Fludac Capsule",
+    "Glyciphage SR 500mg ",
+    "Gemer 2 Tablet PR" ,
+    "Grisovin-FP ",
+    "Gudlax-Plus Laxative Peppermint Sugar Free",
+    "Human Actrapid 40IU/ml Solution",
+    "Hylosoft Eye Drop",
+    "Hyperneb 3% Respules (4ml Each)",
+   
+   
+  ];

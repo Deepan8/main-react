@@ -1,8 +1,8 @@
 import { Modal, Overlay, ModalContent, Popuphead, ButtonTag, Close, Buttons, PopupContent ,Buttonsno} from '../../components/dashboard/popupstyle'
-import { useState, useRef } from 'react';
+// import { useState, useRef } from 'react';
 import Closepop from "../../assets/images/close.png"
-import { Link } from 'react-router-dom';
-import Drug from '../dashboard/drug/drug';
+// import { Link } from 'react-router-dom';
+// import Drug from '../dashboard/drug/drug';
 export function Pop(){
 
     return(

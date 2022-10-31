@@ -3,8 +3,6 @@ import context from "../../../resources/string"
 import { useRef, useState } from "react";
 import PharmacyNames from "./PharmacyName";
 import Footer from "../../common/footer";
-import { Pop } from "../../common/popup";
-import { Link } from "react-router-dom";
 import { Modal, Overlay, ModalContent, Popuphead, ButtonTag, Close, Buttons, PopupContent ,Buttonsno} from '../../common/popupstyle'
 import Dummy from "./dummy";
 import Closepop from "../../../assets/images/close.png"
@@ -16,23 +14,7 @@ function Pharmacies() {
 
     const valid = useRef();
     const [iserror,setiserror]= useState({});
-
-//  const handleClick = () => {
-
-
-//     setiserror(validate(valid.current.value))
-//  }
-//    const validate = (valid) => {
-//     const err={};
-    
-//     if (valid === '') {
-//     err.valid='please enter the positive number';
-//     }
-//    return err;
-//    }
-
-
-    const yearplan = useRef();
+ const yearplan = useRef();
     const [value, setValue] = useState("");
     
     const [modal, setModal] = useState(false);
@@ -91,9 +73,11 @@ function Pharmacies() {
                                             <h5>Do you want to Continue?</h5>
                                         </PopupContent>
                                         <ButtonTag>
-                                            <Buttons onClick={toggleModal}>Yes</Buttons>
-                                            <Buttons className="buttons" onClick={toggleModal}>No</Buttons>
-                                        </ButtonTag>
+                                        
+                                         <Buttonsno className="buttons" >No</Buttonsno>
+                                         <Buttons >Yes</Buttons>
+                                       
+                                    </ButtonTag>
                                     </ModalContent>
                                 </Modal>
                             )}

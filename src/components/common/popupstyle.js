@@ -20,7 +20,7 @@ transform: translate(-50%, -50%);
 line-height: 1.4;
 background: #f1f1f1;
 color:black;
-padding: 14px 0 14px 24px;
+/* padding: 14px 0 14px 24px; */
 border-radius: 8px;
 max-width: 600px;
 min-width: 300px;`
@@ -30,12 +30,22 @@ export const Popuphead = styled.h3`
   
 export const ButtonTag = styled.div`
 display: flex;
-margin-left: 30%;
-column-gap: 2px;`
+align-items: center;
+justify-content: center;
+gap: 12px;
+border-top: 2px solid grey;
+    padding: 5px;
+`
 
 export const Close = styled.div`
 display: flex;
-align-items: center;`
+align-items: center;
+justify-content: space-around;
+background-color: rgb(247,247,247);
+width: 100%;
+border-radius: 5px;
+padding:3.5% 0%;
+`
 
 export const Buttons = styled.button`
 width:25%;
@@ -44,6 +54,17 @@ background-color: blue;
 border-radius: 6px;
 border: none;
 color: #f1f1f1;`
+
+export const Buttonsno = styled.button`
+width:25%;
+padding: 2%;;
+background-color: white;
+border-radius: 6px;
+border: none;
+color: black;
+box-shadow:0px 1px 0px 1px;
+`
+
 
 export const PopupContent = styled.div`
 padding:2% 10%;

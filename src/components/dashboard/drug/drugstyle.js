@@ -59,7 +59,7 @@ width: 100%;
 `;
 export const Input = styled.input`
 border:none;
-/* width:100%; */
+
 outline:none;
 `
 export const SearchBar =styled.div`

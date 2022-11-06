@@ -8,6 +8,7 @@ export const Totall = styled.div`
     
 `
 export const Nav = styled.div`
+
 font-family: "LexendDeca-Regular";
 
 background-color: grey;

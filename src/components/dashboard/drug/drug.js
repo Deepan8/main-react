@@ -71,8 +71,8 @@ function Drug() {
                         </select>
                         <>
                                 {modal && (
-                                    <Modal>
-                                        <Overlay onClick={toggleModal} ></Overlay>
+                                    // <Modal>
+                                        <Overlay >
                                         <ModalContent>
                                             <Close>
                                                 <Popuphead>You are Choosing Next Year as Plan Coverage </Popuphead>
@@ -89,7 +89,8 @@ function Drug() {
                                        
                                     </ButtonTag>
                                         </ModalContent>
-                                    </Modal>
+                                        </Overlay>
+                                    // </Modal>
                                 )}
                             </>
                     </Coverage>

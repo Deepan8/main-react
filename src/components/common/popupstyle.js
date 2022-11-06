@@ -7,10 +7,11 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-position: fixed;`
+position: fixed;
+background: rgba(49,49,49,0.8);`
 
 export const Overlay = styled(Modal)`
-background: rgba(49,49,49,0.8);`
+`
 
 export const ModalContent = styled.div`
 position: absolute;

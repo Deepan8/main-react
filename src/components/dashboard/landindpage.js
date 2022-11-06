@@ -1,26 +1,16 @@
 import { Nav, Bluebox, Question, Twobox, Doctorbox, Drugbox, Imagetag, Logoheading, Row, Buttontag, Contentag, Mainblue, Logoname,Links,Totall } from "../../../src/components/dashboard/landingpagestyle"
 import Footer from "../common/footer";
-import { useNavigate } from "react-router-dom";
 import context from "../../../src/resources/string"
 import { images } from "../../resources/images"
 function Content() {
-    const navigate = useNavigate();
 
-    function handleClick() {
-      navigate("/Drug");
-     
-    }
-    function handleClickPharmacies() {
-        navigate("/Pharmacies");
-       
-      }
     return (
         <Totall>
-            <Mainblue color="red">
+            <Mainblue >
 
-                <Nav>{context.Navcontent}</Nav>
+                <Nav Category='navi'>{context.Navcontent}</Nav>
                 <Bluebox>
-                    <Question>
+                    <Question Category='navii'>
                         {context.Searchwhat}
                     </Question>
                     <Twobox>
@@ -38,8 +28,8 @@ function Content() {
                                 <Logoname>{context.Drug}</Logoname></Logoheading>
                             <Contentag> {context.Find}</Contentag>
                             <Row>
-                             <Links to="/Drug">   <Buttontag type="submit" value="Submit" onClick={handleClick} >search for drugs</Buttontag></Links>
-                             <Links to="/Pharmacies">  <Buttontag type="submit" value="Submit" onClick={handleClickPharmacies} >search for pharmacies</Buttontag></Links>
+                             <Links to="/Drug">   <Buttontag type="submit" value="Submit"  >search for drugs</Buttontag></Links>
+                             <Links to="/Pharmacies">  <Buttontag type="submit" value="Submit"  >search for pharmacies</Buttontag></Links>
                             </Row>
                         </Drugbox>
                     </Twobox>
